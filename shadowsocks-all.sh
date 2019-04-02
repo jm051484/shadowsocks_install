@@ -272,7 +272,6 @@ autoconf_version(){
         if check_sys packageManager yum; then
             yum install -y autoconf > /dev/null 2>&1 || echo -e "[${red}Error:${plain}] Failed to install autoconf"
         elif check_sys packageManager apt; then
-            apt-get -y update > /dev/null 2>&1
             apt-get -y install autoconf > /dev/null 2>&1 || echo -e "[${red}Error:${plain}] Failed to install autoconf"
         fi
     fi
@@ -570,7 +569,6 @@ install_dependencies(){
             autoconf automake libtool gcc make perl cpio libpcre3 libpcre3-dev zlib1g-dev libev-dev libc-ares-dev git qrencode
         )
 
-        apt-get -y update
         for depend in ${apt_depends[@]}; do
             error_detect_depends "apt-get -y install ${depend}"
         done
