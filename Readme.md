@@ -35,7 +35,7 @@ shadowsocks-all.sh
 ==================
 - Auto Install Shadowsocks Server (all version) for CentOS/Debian/Ubuntu
 - https://teddysun.com/486.html
-```- wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh```
+```- wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/jm051484/shadowsocks_install/master/shadowsocks-all.sh```
 ```- chmod +x shadowsocks-all.sh```
 ```- ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log```
 
